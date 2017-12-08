@@ -32,3 +32,39 @@ header {
 .mobile {
   display: none;
 }
+
+/* Banner */
+
+
+/* Content */
+
+.main-block {
+  width: 100%;
+
+}
+
+.col-left {
+  width: 60%;
+  padding: 2 1.5rem;
+}
+
+.col-right {
+  width: 40%;
+  padding-top: 2rem;  
+}
+
+  #banner {
+
+  }
+
+  #information {
+
+  }
+
+  #courses {
+
+  }
+
+  #thesis {
+
+  }
