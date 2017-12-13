@@ -5,10 +5,11 @@
 }
 html {
   font-size: 16px;
+  color: hsl(0, 22%, 14%);
 }
 
 body {
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
 }
 
@@ -20,19 +21,27 @@ img {
 
 h1 {
   font-size: 3rem;
+  line-height: 1.5;
+  color: hsl(0, 67%, 45%);
 }
 
 h2 {
   font-size: 2rem;
+  line-height: 1.5;
 }
 
 h3 {
   font-size: 1.3rem;
+  line-height: 1.5;
   font-weight: bold;
 }
 
 p {
-  line-height: 1.5rem;
+  line-height: 1.5;
+}
+
+a:hover {
+  color: hsl(0, 67%, 50%);
 }
 
 /* Color scheme
@@ -40,7 +49,7 @@ p {
 LIGHTEST color: hsl(0, 0%, 93%)
 BROWNISH color: hsl(0, 5%, 15%)
 BLACK color: hsl(0, 6.3%, 6.3%)
-RED/HIGHLIGHT color: hsl(0, 50%, 33%)
+RED/HIGHLIGHT color: hsl(0, 67%, 50%) en hsl(0, 88%, 56%)
 ALSO LIGHT  color: hsl(0, 0%, 66%)
 
 
@@ -49,6 +58,7 @@ ALSO LIGHT  color: hsl(0, 0%, 66%)
 header {
   background-color: white;
   color: hsl(0, 6.3%, 6.3%);
+  border-bottom: 2px solid hsl(0, 0%, 93%);
   position: fixed;
   z-index: 10;
   width: inherit;
@@ -61,7 +71,7 @@ header {
 
 header span {
   font-weight: bolder;
-  color: hsl(0, 50%, 33%);
+  color: hsl(0, 67%, 50%);
 }
 
 .main-container, footer {
@@ -90,8 +100,9 @@ header span {
 }
 
 .nav li a:hover {
-  color: hsl(0, 67%, 50%);
+  color: hsl(0, 88%, 56%);
 }
+
 
 /* This does not work for some reason
 .nav li a:visited {
@@ -152,12 +163,6 @@ header span {
 
 /* General colour styling */
 
-
-.section {
-  border: 1px solid hsl(0, 0%, 93%);
-  border-top: none;
-}
-
 .section:nth-child(odd) {
   background-color: hsl(0, 0%, 93%);
 }
@@ -166,7 +171,7 @@ header span {
 /* Banner */
 
 #banner .col-right {
-  justify-content: center;
+  margin-top: 4rem;
 }
 
 .banner-text {
@@ -174,8 +179,12 @@ header span {
   width: 80%;
 }
 
-.banner-text h1, .banner-text p {
+.banner-text h1 {
   margin-bottom: 2rem;
+}
+
+.banner-text p {
+  margin-bottom: 3rem;
 }
 
 .button {
@@ -226,7 +235,6 @@ header span {
 
 .item:first-child {
   padding-top: 0;
-
 }
 
 .item .image {
@@ -240,7 +248,11 @@ header span {
 }
 
 .item .description p a {
-  color: hsl(0, 50%, 33%);
+  color: hsl(0, 67%, 45%);
+}
+
+.item .description p a:hover {
+  color: hsl(0, 88%, 56%);
 }
 
 /* Courses */
@@ -268,6 +280,18 @@ header span {
   padding-top: 0.5rem;
 }
 
+.course {
+  background-color: hsl(0, 0%, 97%);
+}
+
+.course:hover {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.course p:first-of-type {
+  color: hsl(0, 67%, 30%);
+}
+
 .row:first-child {
   margin-bottom: 2rem;
 }
@@ -288,10 +312,16 @@ video {
 /* Footer */
 
 footer {
+  height: 5rem;
+  border-top: 2px solid hsl(0, 0%, 93%);
   margin: 1rem 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.copy {
+  color: hsl(0, 67%, 50%)
 }
 
 .terms ul {
