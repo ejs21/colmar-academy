@@ -31,6 +31,10 @@ h3 {
 /* Header */
 
 header {
+background-color: white;
+  position: fixed;
+  z-index: 10;
+  width: inherit;
   height: 4rem;
   padding: 0 1.5rem;
   display: flex;
@@ -38,19 +42,10 @@ header {
   justify-content: space-between;
 }
 
-/* Issue with the header, when making it fixed the flexbox isn't working as expected anymore:
-
-header {
-  position: fixed;
-  z-index: 10;
-}
-
 .main-container, footer {
-  position: relative:
+  position: relative;
   top: 4rem;
 }
-
-*/
 
 .logo {
   height: 2rem;
@@ -134,15 +129,13 @@ header {
   margin-bottom: 2rem;
 }
 
-  /* Button */
-
-  .button {
-    background-color: lightgrey;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+.button {
+  background-color: lightgrey;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   }
 
 
