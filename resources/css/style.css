@@ -1,5 +1,8 @@
 /* Universal styles */
 
+* {
+  box-sizing: border-box;
+}
 html {
   font-size: 16px;
 }
@@ -28,10 +31,24 @@ h3 {
   font-weight: bold;
 }
 
+p {
+  line-height: 1.5rem;
+}
+
+/* Color scheme
+
+LIGHTEST color: hsl(0, 0%, 93%)
+BROWNISH color: hsl(0, 5%, 15%)
+BLACK color: hsl(0, 6.3%, 6.3%)
+RED/HIGHLIGHT color: hsl(0, 50%, 33%)
+ALSO LIGHT  color: hsl(0, 0%, 66%)
+
+
 /* Header */
 
 header {
-background-color: white;
+  background-color: white;
+  color: hsl(0, 6.3%, 6.3%);
   position: fixed;
   z-index: 10;
   width: inherit;
@@ -40,6 +57,11 @@ background-color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+header span {
+  font-weight: bolder;
+  color: hsl(0, 50%, 33%);
 }
 
 .main-container, footer {
@@ -61,6 +83,20 @@ background-color: white;
 .nav ul li {
   padding-left: 1rem;
 }
+
+.nav li a {
+  color: hsl(0, 6.3%, 6.3%);
+  font-weight: bold;
+}
+
+.nav li a:hover {
+  color: hsl(0, 67%, 50%);
+}
+
+/* This does not work for some reason
+.nav li a:visited {
+  color: hsl(0, 5%, 15%);
+} */
 
 .mobile {
   display: none;
@@ -114,6 +150,19 @@ background-color: white;
   margin-top: 0.5rem;
 }
 
+/* General colour styling */
+
+
+.section {
+  border: 1px solid hsl(0, 0%, 93%);
+  border-top: none;
+}
+
+.section:nth-child(odd) {
+  background-color: hsl(0, 0%, 93%);
+}
+
+
 /* Banner */
 
 #banner .col-right {
@@ -130,7 +179,8 @@ background-color: white;
 }
 
 .button {
-  background-color: lightgrey;
+  background-color: hsl(0, 67%, 50%);
+  border-radius: 5px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -138,6 +188,13 @@ background-color: white;
   padding-bottom: 0.5rem;
   }
 
+.button:hover {
+  background-color: hsl(0, 88%, 56%);
+}
+
+.button a {
+  color: white;
+}
 
 /* Information */
 
@@ -183,7 +240,7 @@ background-color: white;
 }
 
 .item .description p a {
-  color: lightblue;
+  color: hsl(0, 50%, 33%);
 }
 
 /* Courses */
