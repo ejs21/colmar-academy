@@ -52,7 +52,7 @@ header {
   display: none;
 }
 
-/* Main container general styles */
+/* Main container general sizing and positioning */
 
 .main-container {
   max-width: 100%;
@@ -62,21 +62,42 @@ header {
 }
 
 .section {
-  max-width: 100%;
+  max-width: 90%;
+  margin: auto;
+}
+
+.two-columns {
   display: flex;
   padding: 2rem 1.5rem;
-}  /* Exception is course-section */
+}
 
-.col-left {
+.two-columns .col-left {
   width: 60%;
   padding: 0 1.5rem;
 }
 
-.col-right {
+.two-columns .col-right {
   width: 40%;
   display: flex;
   flex-direction: column;
 }
+
+.heading-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading-row .heading {
+  padding-top: 2rem;
+}
+
+
+.extra-padding {
+  padding: 2rem 4.5rem
+}
+
+
 
 /* Banner */
 
@@ -106,7 +127,7 @@ header {
 
 .item:first-child {
   padding-top: 0;
-  
+
 }
 
 .item .image {
@@ -128,18 +149,6 @@ header {
 }
 
 /* Courses */
-
-.section-2 {
-  max-width: 100%;
-  padding: 2rem 4.5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.section-2 .title {
-  padding-bottom: 2rem;
-}
 
 .course-container {
   display: flex;
