@@ -38,6 +38,20 @@ header {
   justify-content: space-between;
 }
 
+/* Issue with the header, when making it fixed the flexbox isn't working as expected anymore:
+
+header {
+  position: fixed;
+  z-index: 10;
+}
+
+.main-container, footer {
+  position: relative:
+  top: 4rem;
+}
+
+*/
+
 .logo {
   height: 2rem;
   display: flex;
@@ -128,7 +142,7 @@ header {
     display: flex;
     justify-content: center;
     padding-top: 0.5rem;
-    padding-bottom: 0.5rem; 
+    padding-bottom: 0.5rem;
   }
 
 
