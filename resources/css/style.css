@@ -4,6 +4,11 @@ html {
   font-size: 16px;
 }
 
+body {
+  width: 90%;
+  margin: 0 auto;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -62,13 +67,13 @@ header {
 }
 
 .section {
-  max-width: 90%;
+  max-width: 100%;
   margin: auto;
 }
 
 .two-columns {
   display: flex;
-  padding: 2rem 1.5rem;
+  padding: 2rem 0;
 }
 
 .two-columns .col-left {
@@ -92,20 +97,50 @@ header {
   padding-top: 2rem;
 }
 
-
 .extra-padding {
   padding: 2rem 4.5rem
 }
 
-
+.description p {
+  margin-top: 0.5rem;
+}
 
 /* Banner */
 
-#banner {
-
+#banner .col-right {
+  justify-content: center;
 }
 
+.banner-text {
+  margin-left: 1rem;
+  width: 80%;
+}
+
+.banner-text h1, .banner-text p {
+  margin-bottom: 2rem;
+}
+
+  /* Button */
+
+  .button {
+    background-color: lightgrey;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem; 
+  }
+
+
 /* Information */
+
+.description h2 {
+  margin: 2rem 0 1rem 0;
+}
+
+#subtext {
+  margin-top: 1.5rem;
+}
 
 .item-main {
   width: 100%;
@@ -138,10 +173,6 @@ header {
 .item .description {
   width: 65%;
   text-align: left;
-}
-
-.item .description p {
-  margin-top: 0.5rem;
 }
 
 .item .description p a {
@@ -182,12 +213,27 @@ header {
 }
 
 
-
 /* Thesis */
 
 video {
   max-width: 100%;
   height: auto;
+  padding-bottom: 1.5rem;
 }
 
 /* Footer */
+
+footer {
+  margin: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.terms ul {
+  display: flex;
+}
+
+.terms li {
+  margin-left: 1rem;
+}
