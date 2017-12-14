@@ -45,7 +45,6 @@ html {
 
 body {
   width: 100%;
-  margin: 0 auto;
 }
 
 p {
@@ -100,7 +99,6 @@ img {
 
 .section {
   max-width: 100%;
-  margin: auto;
 }
 
 .section:nth-child(odd) {
@@ -131,10 +129,6 @@ img {
 
 .heading-row .heading {
   padding-top: 2rem;
-}
-
-.extra-padding {
-  padding: 2rem 4.5rem
 }
 
 .description p {
@@ -292,6 +286,10 @@ header span {
 
 /* Courses */
 
+.extra-padding {
+  padding: 2rem 4.5rem
+}
+
 .course-container {
   display: flex;
   flex-direction: column;
@@ -358,11 +356,11 @@ footer {
 
 .copy p, .terms a {
   font-family: "Lato", sans-serif;
-  font-size: 0.9rem; 
+  font-size: 0.9rem;
 }
 
 .copy p {
-  color: hsl(0, 67%, 50%)
+  color: hsl(0, 67%, 50%);
 }
 
 .terms ul {
@@ -372,4 +370,103 @@ footer {
 .terms li {
   margin-left: 1rem;
   font-family: "Lato", sans-serif;
+}
+
+/* Media queries */
+
+@media only screen and (max-width: 480px) {
+
+.desktop {
+  display: none;
+}
+
+.mobile {
+  display: block;
+}
+
+header {
+  display: block;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} /* need to think how I get this to work properly */
+
+.section {
+  margin: 2rem 0;
+} /* Ik heb al die margins/padding helemaal opgefokt volgens mij. */
+
+
+.two-columns {
+  flex-direction: column;
+  padding: 0 0;
+}
+
+.two-columns .col-left, .two-columns .col-right {
+  width: 100%;
+  padding: 0 0;
+}
+
+.banner-text {
+  width: 100%;
+  margin: 2rem 1rem;
+}
+
+.button {
+  max-width: 100%;
+}
+
+.item {
+  width: 100%;
+  flex-direction: column;
+  margin: 0 1rem;
+}
+
+.item .image {
+  width: 100%;
+}
+
+.item .description {
+  width: 100%;
+  padding: 1rem 1rem;
+}
+
+.course-container {
+  width: 100%;
+  /* margin: 1rem 0; maar ik wil dit als basis om alle sections heen.. */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.course-container .row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.course:nth-child(odd){
+  margin: 1rem 0.5rem;
+}
+
+.row:first-child {
+  margin-bottom: 0rem;
+}
+
+.course {
+  width: 100%;
+  margin: 1rem 0.5rem;
+}
+
+.extra-padding {
+  padding: 0;
+}
+
+#thesis .two-columns .col-right {
+  display: none;
+}
+
+
 }
