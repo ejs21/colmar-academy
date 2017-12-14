@@ -51,6 +51,7 @@ p {
   font-family: "Lora", serif;
   font-size: 1rem;
   line-height: 1.5;
+  margin-top: 0.5rem;
 }
 
 h1 {
@@ -58,6 +59,7 @@ h1 {
   font-size: 3rem;
   line-height: 1.3;
   color: hsl(0, 67%, 45%);
+  margin-bottom: 2rem;
 }
 
 h2 {
@@ -99,6 +101,8 @@ img {
 
 .section {
   max-width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .section:nth-child(odd) {
@@ -107,7 +111,6 @@ img {
 
 .two-columns {
   display: flex;
-  padding: 2rem 0;
 }
 
 .two-columns .col-left {
@@ -127,13 +130,10 @@ img {
   align-items: center;
 }
 
-.heading-row .heading {
-  padding-top: 2rem;
-}
+/* .heading {
+  margin-bottom: 2rem;
+}  Kan weg geloof ik - staat nu bij h1 */
 
-.description p {
-  margin-top: 0.5rem;
-}
 
 /* Header */
 
@@ -203,7 +203,6 @@ header span {
 
 .banner-text h1 {
   font-weight: bold;
-  margin-bottom: 2rem;
 }
 
 .banner-text p {
@@ -244,7 +243,8 @@ header span {
 }
 
 .item-main .description h2 {
-  margin: 2rem 0 1rem 0;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 .item-main .subtext {
@@ -255,7 +255,7 @@ header span {
 
 .item {
   max-width: 100%;
-  padding: 1rem;
+  padding: 1rem 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -384,6 +384,10 @@ footer {
   display: block;
 }
 
+h1 {
+  margin-bottom: 1rem;
+}
+
 header {
   display: block;
 }
@@ -394,28 +398,33 @@ header ul {
   align-items: center;
 } /* need to think how I get this to work properly */
 
-.section {
-  margin: 2rem 0;
-} /* Ik heb al die margins/padding helemaal opgefokt volgens mij. */
-
+#banner {
+  padding-top: 0;
+}
 
 .two-columns {
   flex-direction: column;
-  padding: 0 0;
 }
 
 .two-columns .col-left, .two-columns .col-right {
   width: 100%;
-  padding: 0 0;
+  padding: 0;
+}
+
+#banner .col-right {
+  margin-top: 2rem;
 }
 
 .banner-text {
   width: 100%;
-  margin: 2rem 1rem;
 }
 
 .button {
   max-width: 100%;
+}
+
+#information {
+  padding-bottom: 0;
 }
 
 .item {
@@ -424,8 +433,13 @@ header ul {
   margin: 0 1rem;
 }
 
+.item:last-child {
+  border-bottom: none;
+}
+
 .item .image {
   width: 100%;
+  padding-right: 0;
 }
 
 .item .description {
@@ -434,14 +448,15 @@ header ul {
 }
 
 .course-container {
-  width: 100%;
-  /* margin: 1rem 0; maar ik wil dit als basis om alle sections heen.. */
+  margin-left: 1rem;
+  margin-right: 1rem;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
 .course-container .row {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -456,6 +471,7 @@ header ul {
 }
 
 .course {
+  display: inline-block;
   width: 100%;
   margin: 1rem 0.5rem;
 }
@@ -468,5 +484,8 @@ header ul {
   display: none;
 }
 
+#thesis {
+  padding-bottom: 1.5rem;
+}
 
 }
