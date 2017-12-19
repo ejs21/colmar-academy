@@ -41,6 +41,7 @@
 html {
   font-size: 16px;
   color: hsl(0, 22%, 14%);
+  max-width: 100%;
 }
 
 body {
@@ -387,10 +388,6 @@ h1 {
   margin-bottom: 1rem;
 }
 
-header {
-  display: block;
-}
-
 header ul {
   display: flex;
   justify-content: space-between;
@@ -415,7 +412,7 @@ header ul {
 }
 
 .banner-text {
-  width: 100%;
+  width: 90%;
 }
 
 .button {
@@ -429,7 +426,6 @@ header ul {
 .item {
   width: 100%;
   flex-direction: column;
-  margin: 0 1rem;
 }
 
 .item:last-child {
@@ -454,7 +450,6 @@ header ul {
   display: flex;
 }
 
-
 .course-container-mobile {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -473,41 +468,6 @@ header ul {
   background-color: hsl(0, 0%, 100%);
   color: hsl(0, 67%, 50%);
 }
-
-
-/*
-.course-container {
-  width: 100%;
-}
-
-.course-container {
-
-}
-
-.course-container .row {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.course:nth-child(odd){
-  margin: 1rem 0.5rem;
-}
-
-.row:first-child {
-  margin-bottom: 0rem;
-}
-
-.course {
-  display: inline-block;
-  width: 100%;
-  margin: 1rem 0.5rem;
-}
-
-.extra-padding {
-  padding: 0;
-} */
-
 
 #thesis .two-columns .col-right {
   display: none;
