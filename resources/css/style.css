@@ -172,21 +172,21 @@ header span {
   align-items: center;
 }
 
-.nav ul {
+nav ul {
   display: flex;
   align-items: center;
 }
 
-.nav ul li {
+nav ul li {
   padding-left: 1rem;
 }
 
-.nav li a {
+nav li a {
   color: hsl(0, 6.3%, 6.3%);
   font-weight: bold;
 }
 
-.nav li a:hover {
+nav li a:hover {
   color: hsl(0, 88%, 56%);
 }
 
@@ -401,15 +401,15 @@ header {
   justify-content: center;
 }
 
-.nav {
+nav {
   width: 100%;
 }
 
-.nav ul {
+nav ul {
   justify-content: space-between;
 }
 
-.nav ul li {
+nav ul li {
   padding-left: 0;
 }
 
